@@ -1,0 +1,26 @@
+# version: '3'
+name: "freerider"
+
+services:
+  # database for the freerider reservation system
+  mysqld:
+    container_name: "freerider_db"
+    # path to Dockerfile to build image
+    build: "./services/freerider_db"
+    image: "freerider/db-img:1.0"
+    volumes:
+      - "db-vol:/var/lib/mysql"
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_ROOT_PASSWORD:
+      # created via 'access.sql':
+      # MYSQL_DATABASE: "FREERIDER_DB"
+      # MYSQL_USER: "freerider"
+      # MYSQL_PASSWORD: "free.ride"
+    ports:
+      - "3306:3306"
+    # restart: "always"
+
+volumes:
+  # volume to store database data
+  db-vol:
