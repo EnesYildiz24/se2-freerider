@@ -1,0 +1,62 @@
+docker volume create db-volume
+docker run \
+    --name db-mysqld \
+    -v db-volume:/var/lib/mysql \
+    -p3306:3306 \
+    -d mysql:8.4
+
+docker run -it --rm -v db-volume:/var/lib/mysql busybox ls -l /var/lib/mysql
+docker exec -it freerider-freerider-mysqld-1 bash
+
+docker volume ls
+docker volume inspect freerider-mysqld-volume
+
+
+*** build image
+docker build -t freerider-mysqld-img:1.0 --no-cache .
+
+*** create and run container
+docker run \
+    --name freerider-mysqld \
+    -v freerider-mysqld-volume:/var/lib/mysql \
+    -p3306:3306 \
+    -d \
+    freerider-mysqld-img:1.0; \
+\
+docker logs --follow freerider-mysqld
+
+*** attach shell process
+docker exec -it freerider-mysqld bash
+
+
+*** docker compose
+docker-compose up -d
+docker exec -it freerider-mysqld-1 bash
+cat /tmp/sample_data.sql | mysql --user=freerider --password=free.ride
+echo 'use FREERIDER_DB; select * from CUSTOMER;' | mysql
+docker-compose stop | start
+
+
+*** data load
+cat data_customers.sql | mysql --user=freerider --password=free.ride
+cat data_vehicles.sql | mysql --user=freerider --password=free.ride
+cat data_reservations.sql | mysql --user=freerider --password=free.ride
+
+*** cleanup:
+docker stop freerider-mysqld; \
+docker rm freerider-mysqld; \
+docker image rm freerider-mysqld-img:1.0; \
+docker volume rm freerider-mysqld-volume
+
+    -e MYSQL_ALLOW_EMPTY_PASSWORD=yes \
+    -e MYSQL_ROOT_PASSWORD="" \
+    -e MYSQL_DATABASE="FREERIDER_DB" \
+    -e MYSQL_USER="freerider" \
+    -e MYSQL_PASSWORD="free.ride" \
+
+# based on mysql:8.0 base image: https://hub.docker.com/_/mysql, v8:0
+# Mac with M1-Chip use: FROM --platform=linux/amd64 mysql:8.0
+# 
+# Registry (docker.io) required in future releases.
+# FROM docker.io/mysql:8.0
+FROM mysql:8.0
