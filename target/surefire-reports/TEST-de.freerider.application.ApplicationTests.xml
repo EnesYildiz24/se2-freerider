@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="de.freerider.application.ApplicationTests" time="0.756" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/enesy/Documents/Semester 4/Soft2/se2-freerider/target/test-classes:/Users/enesy/Documents/Semester 4/Soft2/se2-freerider/target/classes:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.7/spring-boot-starter-3.3.7.jar:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot/3.3.7/spring-boot-3.3.7.jar:/Users/enesy/.m2/repository/org/springframework/spring-context/6.1.16/spring-context-6.1.16.jar:/Users/enesy/.m2/repository/org/springframework/spring-aop/6.1.16/spring-aop-6.1.16.jar:/Users/enesy/.m2/repository/org/springframework/spring-beans/6.1.16/spring-beans-6.1.16.jar:/Users/enesy/.m2/repository/org/springframework/spring-expression/6.1.16/spring-expression-6.1.16.jar:/Users/enesy/.m2/repository/io/micrometer/micrometer-observation/1.13.9/micrometer-observation-1.13.9.jar:/Users/enesy/.m2/repository/io/micrometer/micrometer-commons/1.13.9/micrometer-commons-1.13.9.jar:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.7/spring-boot-autoconfigure-3.3.7.jar:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.7/spring-boot-starter-logging-3.3.7.jar:/Users/enesy/.m2/repository/ch/qos/logback/logback-classic/1.5.12/logback-classic-1.5.12.jar:/Users/enesy/.m2/repository/ch/qos/logback/logback-core/1.5.12/logback-core-1.5.12.jar:/Users/enesy/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/enesy/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/enesy/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/enesy/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/enesy/.m2/repository/org/springframework/spring-core/6.1.16/spring-core-6.1.16.jar:/Users/enesy/.m2/repository/org/springframework/spring-jcl/6.1.16/spring-jcl-6.1.16.jar:/Users/enesy/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.7/spring-boot-starter-test-3.3.7.jar:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot-test/3.3.7/spring-boot-test-3.3.7.jar:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.7/spring-boot-test-autoconfigure-3.3.7.jar:/Users/enesy/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/enesy/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/enesy/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/enesy/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/enesy/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/enesy/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/enesy/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/enesy/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/Users/enesy/.m2/repository/net/bytebuddy/byte-buddy/1.14.19/byte-buddy-1.14.19.jar:/Users/enesy/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/enesy/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/enesy/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.5/junit-jupiter-5.10.5.jar:/Users/enesy/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.5/junit-jupiter-api-5.10.5.jar:/Users/enesy/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/enesy/.m2/repository/org/junit/platform/junit-platform-commons/1.10.5/junit-platform-commons-1.10.5.jar:/Users/enesy/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/enesy/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.5/junit-jupiter-params-5.10.5.jar:/Users/enesy/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.5/junit-jupiter-engine-5.10.5.jar:/Users/enesy/.m2/repository/org/junit/platform/junit-platform-engine/1.10.5/junit-platform-engine-1.10.5.jar:/Users/enesy/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/enesy/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.19/byte-buddy-agent-1.14.19.jar:/Users/enesy/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/enesy/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/enesy/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/enesy/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/enesy/.m2/repository/org/springframework/spring-test/6.1.16/spring-test-6.1.16.jar:/Users/enesy/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="DE"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/enesy/Documents/Semester 4/Soft2/se2-freerider/target/surefire/surefirebooter-20250110143117215_3.jar /Users/enesy/Documents/Semester 4/Soft2/se2-freerider/target/surefire 2025-01-10T14-31-17_180-jvmRun1 surefire-20250110143117215_1tmp surefire_0-20250110143117215_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/enesy/Documents/Semester 4/Soft2/se2-freerider/target/test-classes:/Users/enesy/Documents/Semester 4/Soft2/se2-freerider/target/classes:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.7/spring-boot-starter-3.3.7.jar:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot/3.3.7/spring-boot-3.3.7.jar:/Users/enesy/.m2/repository/org/springframework/spring-context/6.1.16/spring-context-6.1.16.jar:/Users/enesy/.m2/repository/org/springframework/spring-aop/6.1.16/spring-aop-6.1.16.jar:/Users/enesy/.m2/repository/org/springframework/spring-beans/6.1.16/spring-beans-6.1.16.jar:/Users/enesy/.m2/repository/org/springframework/spring-expression/6.1.16/spring-expression-6.1.16.jar:/Users/enesy/.m2/repository/io/micrometer/micrometer-observation/1.13.9/micrometer-observation-1.13.9.jar:/Users/enesy/.m2/repository/io/micrometer/micrometer-commons/1.13.9/micrometer-commons-1.13.9.jar:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.7/spring-boot-autoconfigure-3.3.7.jar:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.7/spring-boot-starter-logging-3.3.7.jar:/Users/enesy/.m2/repository/ch/qos/logback/logback-classic/1.5.12/logback-classic-1.5.12.jar:/Users/enesy/.m2/repository/ch/qos/logback/logback-core/1.5.12/logback-core-1.5.12.jar:/Users/enesy/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/enesy/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/enesy/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/enesy/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/enesy/.m2/repository/org/springframework/spring-core/6.1.16/spring-core-6.1.16.jar:/Users/enesy/.m2/repository/org/springframework/spring-jcl/6.1.16/spring-jcl-6.1.16.jar:/Users/enesy/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.7/spring-boot-starter-test-3.3.7.jar:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot-test/3.3.7/spring-boot-test-3.3.7.jar:/Users/enesy/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.7/spring-boot-test-autoconfigure-3.3.7.jar:/Users/enesy/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/enesy/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/enesy/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/enesy/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/enesy/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/enesy/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/enesy/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/enesy/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/Users/enesy/.m2/repository/net/bytebuddy/byte-buddy/1.14.19/byte-buddy-1.14.19.jar:/Users/enesy/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/enesy/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/enesy/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.5/junit-jupiter-5.10.5.jar:/Users/enesy/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.5/junit-jupiter-api-5.10.5.jar:/Users/enesy/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/enesy/.m2/repository/org/junit/platform/junit-platform-commons/1.10.5/junit-platform-commons-1.10.5.jar:/Users/enesy/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/enesy/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.5/junit-jupiter-params-5.10.5.jar:/Users/enesy/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.5/junit-jupiter-engine-5.10.5.jar:/Users/enesy/.m2/repository/org/junit/platform/junit-platform-engine/1.10.5/junit-platform-engine-1.10.5.jar:/Users/enesy/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/enesy/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.19/byte-buddy-agent-1.14.19.jar:/Users/enesy/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/enesy/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/enesy/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/enesy/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/enesy/.m2/repository/org/springframework/spring-test/6.1.16/spring-test-6.1.16.jar:/Users/enesy/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/enesy"/>
+    <property name="user.language" value="de"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/enesy/Documents/Semester 4/Soft2/se2-freerider"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/enesy/Documents/Semester 4/Soft2/se2-freerider/target/surefire/surefirebooter-20250110143117215_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.2+13-LTS"/>
+    <property name="user.name" value="enesy"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.2+13"/>
+    <property name="localRepository" value="/Users/enesy/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/mj/_1dzwqkx293d7r93z52jw17r0000gn/T/"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="user.dir" value="/Users/enesy/Documents/Semester 4/Soft2/se2-freerider"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="46809"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/enesy/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.2+13-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[application] "/>
+  </properties>
+  <testcase name="test_100" classname="de.freerider.application.ApplicationTests" time="0.399">
+    <system-out><![CDATA[14:31:17.508 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [de.freerider.application.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:31:17.539 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration de.freerider.application.Application for test class de.freerider.application.ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.7)
+
+
+-<2>--> Application constructor is called
+
+sum :12
+
+-<5>--> run(String... args) called from CommandLineRunner Bean
+
+-<6>--> Bean objects created by Spring Boot in ApplicationContext:
+ - bean: application
+ - bean: applicationAvailability
+ - bean: applicationTaskExecutor
+ - bean: calculator
+ - bean: commandLineRunner
+ - bean: fileWatcher
+ - bean: forceAutoProxyCreatorToUseClassProxying
+ - bean: lifecycleProcessor
+ - bean: propertySourcesPlaceholderConfigurer
+ - bean: simpleAsyncTaskExecutorBuilder
+ - bean: simpleAsyncTaskSchedulerBuilder
+ - bean: spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties
+ - bean: spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties
+ - bean: spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties
+ - bean: spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties
+ - bean: spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties
+ - bean: spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties
+ - bean: sslBundleRegistry
+ - bean: sslPropertiesSslBundleRegistrar
+ - bean: taskExecutorBuilder
+ - bean: taskSchedulerBuilder
+ - bean: threadPoolTaskExecutorBuilder
+ - bean: threadPoolTaskSchedulerBuilder
+
+-<3>--> doSomethingAfterStartup()
+performing test: test_100()
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/enesy/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.19/byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="test_200" classname="de.freerider.application.ApplicationTests" time="0.001">
+    <system-out><![CDATA[performing test: test_200()
+]]></system-out>
+  </testcase>
+  <testcase name="test_300" classname="de.freerider.application.ApplicationTests" time="0.0">
+    <system-out><![CDATA[performing test: test_300()
+]]></system-out>
+  </testcase>
+</testsuite>
