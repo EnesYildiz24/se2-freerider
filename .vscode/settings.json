@@ -1,0 +1,34 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "FREERIDER_DB",
+            "database": "FREERIDER_DB",
+            "username": "freerider",
+            "password": "free.ride"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "MYSQL_DB",
+            "database": "mysql",
+            "username": "root",
+            "password": "password",
+            "connectionTimeout": 15
+        }
+    ],
+    "sqltools.results.reuseTabs": "connection",
+    "java.compile.nullAnalysis.mode": "disabled"
+}

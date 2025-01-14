@@ -1,0 +1,29 @@
+-- https://www.w3schools.com/sql/func_mysql_now.asp
+--
+-- Date and time values can be converted from String representations
+-- using formatting rules. See
+-- https://www.w3schools.com/mysql/func_mysql_str_to_date.asp
+-- \\
+-- Example:
+-- STR_TO_DATE('20/12/2024 10:00:00','%d/%m/%Y %H:%i:%s')
+--
+-- Alternatively, a non-linear decimal format can be used comprised of 4 digits
+-- for the year followed by number pairs for month, day, hour, min and sec:
+--    2024 * 10,000,000,000 - years
+--    + 12 *    100,000,000 - month
+--    + 31 *      1,000,000 - day
+--    + 24 *         10,000 - hour
+--    + 59 *            100 - minute
+--    + 59 *              1 = 20241231245959 = 2024,12,31 24:59:59
+-- This format cannot be used for time calculations.
+--
+-- Unix 'epoch time' is a linear date/time format counting sec since 01/01/1970
+UTC
+-- with conversion functions, e.g. from_unixtime().
+-- For example, e.g. 04.12.2024 10:00 = 1,670,148,000 (~1,6 billion seconds).
+-- Use converter: https://www.epochconverter.com
+-- Example:
+-- 1734516000(sec), 1734516000000(msec) - Sunday, December 18, 2024 10:00:00
+-- 1734537600(sec), 1734537600000(msec) - Sunday, December 18, 2024 16:00:00
+-- = +6h = 6*60*60 sec = 21,600 = 1671379200 - 1671379200 = 21,600.
+--
